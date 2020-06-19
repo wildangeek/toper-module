@@ -1,14 +1,14 @@
-function checkLetters(str) {
-    let strArray = str.split("");
-    let finalStr = strArray.map((char) => {
-      if (/[a-z]/.test(char)) {
-        char = char.toUpperCase();
+function textTransformApp(string) {
+    let ini = string.split("");
+    let itu = ini.map((character) => {
+      if (/[a-z]/.test(character)) {
+        character = character.toUpperCase();
       } else {
-        char = char.toLowerCase();
+        character = character.toLowerCase();
       }
-      return char;
+      return character;
     });
-    return finalStr.join("");
+    return itu.join("");
   }
   
-  export default checkLetters;
+  export default textTransformApp;
